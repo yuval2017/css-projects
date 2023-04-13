@@ -1,0 +1,205 @@
+<!-- 
+  1) block - take all space in the line,
+  2) inline block element - take only space he needs to like image and input
+  3) inline element - apear with line of text like <strong></strong>
+-->
+<!--
+  Layouts
+  1) Vertical Layout - item on the top on eachother
+  2) Horizontal Layout - item beside each other
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> YouTube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/video.css">
+
+    
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="/icon/hamburger-menu.svg">
+        <img class="youtube-logo" src="/icon/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-bottun">
+          <img src="/icon/search.svg">
+        </button>
+        <button class="voice-search-bottun">
+          <img src="/icon/voice-search-icon.svg">
+        </button>
+      </div>
+      <div class="right-section">
+        right-section
+      </div>
+      
+    </div>
+    
+
+    <div class="video-grid">
+      <div class="video-preview">
+          <!-- two first dives for vertical layout -->
+        <div class="thumbnail-row">
+          <!--void element-->
+          <img class="thumbnail" src="/thumbnails/thumbnail-1.webp">
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="/channel-pictures/channel-1.jpeg">
+          </div>
+          <div class="video-info">
+            <!--paragraph is a block elements by defualt that take the intire line-->
+            <p class = "video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--void element-->
+        <img class="thumbnail" src="/thumbnails/thumbnail-2.webp">
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src = "channel-pictures/channel-2.jpeg">
+          </div>
+          <div class="video-info">
+            <!--paragraph is a block elements by defualt that take the intire line-->
+            <p class = "video-title">
+              Try Not To Laugh Challenge #9
+            </p>
+            <p class="video-author">
+              Markiplier
+            </p>
+            <p class="video-stats">
+              19M views &#183; 6 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <!-- two first dives for vertical layout -->
+        <div class="thumbnail-row">
+          <!--void element-->
+          <img class="thumbnail" src="/thumbnails/thumbnail-3.webp">
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="/channel-pictures/channel-3.jpeg">
+          </div>
+          <div class="video-info">
+            <!--paragraph is a block elements by defualt that take the intire line-->
+            <p class = "video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--void element-->
+        <img class="thumbnail" src="/thumbnails/thumbnail-4.webp">
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src = "channel-pictures/channel-4.jpeg">
+          </div>
+          <div class="video-info">
+            <!--paragraph is a block elements by defualt that take the intire line-->
+            <p class = "video-title">
+              Try Not To Laugh Challenge #9
+            </p>
+            <p class="video-author">
+              Markiplier
+            </p>
+            <p class="video-stats">
+              19M views &#183; 6 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <!-- two first dives for vertical layout -->
+        <div class="thumbnail-row">
+          <!--void element-->
+          <img class="thumbnail" src="/thumbnails/thumbnail-5.webp">
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="/channel-pictures/channel-5.jpeg">
+          </div>
+          <div class="video-info">
+            <!--paragraph is a block elements by defualt that take the intire line-->
+            <p class = "video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--void element-->
+        <img class="thumbnail" src="/thumbnails/thumbnail-6.webp">
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src = "channel-pictures/channel-6.jpeg">
+          </div>
+          <div class="video-info">
+            <!--paragraph is a block elements by defualt that take the intire line-->
+            <p class = "video-title">
+              Try Not To Laugh Challenge #9
+            </p>
+            <p class="video-author">
+              Markiplier
+            </p>
+            <p class="video-stats">
+              19M views &#183; 6 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
