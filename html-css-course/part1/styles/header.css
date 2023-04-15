@@ -65,9 +65,48 @@
   margin-left: -1px;
   margin-right: 10px;
 }
+.search-bottun,
+.voice-search-bottun,
+.upload-icon-container,
+.youtube-app-icon-container,
+.notification-icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* pointer-events: none; when we hover on tooltip its not shows */
+.search-bottun .tooltip,
+.voice-search-bottun .tooltip,
+.upload-icon-container .tooltip,
+.youtube-app-icon-container .tooltip,
+.notification-icon-container .tooltip{
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search-bottun:hover .tooltip,
+.voice-search-bottun:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-app-icon-container:hover .tooltip,
+.notification-icon-container:hover .tooltip {
+  opacity: 1;
+}
+
 .search-icon{
   height: 25px;
-  margin-top: 4px;
 }
 .voice-search-bottun{
   height: 40px;
@@ -78,7 +117,6 @@
 }
 .voice-search-icon{
   height: 24px;
-  margin-top: 4px;
 }
 /* flex shrink 0 not shrink items */
 .right-section{
@@ -116,8 +154,6 @@
   padding-top: 2px;
   padding-bottom: 2px;
   border-radius: 10px;
-
-
 }
 .curr-user-picture{
   height: 32px;
